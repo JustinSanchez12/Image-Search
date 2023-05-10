@@ -1,10 +1,11 @@
 from selenium import webdriver as wd
 import time
 from selenium.webdriver.common.keys import Keys
-from webdriver_manager.chrome import ChromeDriveManager
+from webdriver_manager.chrome import ChromeDriverManager
 
 #This will use the latest updated version of WebDriver
-wd = wd.Chrome(ChromeDriveManager().install()) 
+wd = wd.Chrome(ChromeDriverManager().install()) 
+
 #Opens up Google
 wd.get('https://google.com') 
 
